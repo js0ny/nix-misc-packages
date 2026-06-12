@@ -52,7 +52,7 @@ stdenvNoCC.mkDerivation {
       comment = description;
       categories = [
         "Utilities"
-        "Games"
+        "Game"
       ];
       startupWMClass = "clrmamepro";
     })
