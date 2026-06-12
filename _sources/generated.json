@@ -133,5 +133,47 @@
             "type": "github"
         },
         "version": "v4.0.0.6"
+    },
+    "noname": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "noname",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "libnoname",
+            "repo": "noname",
+            "rev": "v1.11.4.1",
+            "sha256": "sha256-Ez/XZHtEDvLCVnJvqxQcUeiZI6GiJMjrorV48eSmbqM=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v1.11.4.1"
+    },
+    "rime-cantonese": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "rime-cantonese",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "rime",
+            "repo": "rime-cantonese",
+            "rev": "latest",
+            "sha256": "sha256-ePoZAuAFk83DjybVpJMtpsITrYsQX2u1mqED29/zsag=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "latest"
     }
 }

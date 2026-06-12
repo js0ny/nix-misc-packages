@@ -82,4 +82,26 @@
       sha256 = "sha256-PgDjXTrMCpTKth/nVczBHUCAuaGn8ZWbTXY5yVH5A6M=";
     };
   };
+  noname = {
+    pname = "noname";
+    version = "v1.11.4.1";
+    src = fetchFromGitHub {
+      owner = "libnoname";
+      repo = "noname";
+      rev = "v1.11.4.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-Ez/XZHtEDvLCVnJvqxQcUeiZI6GiJMjrorV48eSmbqM=";
+    };
+  };
+  rime-cantonese = {
+    pname = "rime-cantonese";
+    version = "latest";
+    src = fetchFromGitHub {
+      owner = "rime";
+      repo = "rime-cantonese";
+      rev = "latest";
+      fetchSubmodules = false;
+      sha256 = "sha256-ePoZAuAFk83DjybVpJMtpsITrYsQX2u1mqED29/zsag=";
+    };
+  };
 }
