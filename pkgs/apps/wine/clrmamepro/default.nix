@@ -23,13 +23,22 @@ stdenvNoCC.mkDerivation {
     pkgs.copyDesktopItems
   ];
 
-  buildInputs = [ winepkg ];
+  buildInputs = [
+    winepkg
+    pkgs.icoutils
+  ];
 
   installPhase = ''
     runHook preInstall
 
     mkdir -p $out/opt/clrmamepro
     cp -r * $out/opt/clrmamepro/
+
+
+    mkdir -p $out/share/icons/hicolor/48x48/apps
+    wrestool --extract --type=14 clrmameUI.exe > $out/opt/clrmamepro/app.ico
+    icotool -x $out/opt/clrmamepro/app.ico
+    cp app_6_48x48x32.png $out/share/icons/hicolor/48x48/apps/clrmamepro.png
 
     mkdir -p $out/bin
 
@@ -47,7 +56,7 @@ stdenvNoCC.mkDerivation {
       name = "clrmamepro";
       exec = "clrmameUI %u";
       icon = "clrmamepro";
-      desktopName = "clrmamepro.desktop";
+      desktopName = "clrmamepro";
       genericName = "ROM Manager";
       comment = description;
       categories = [
