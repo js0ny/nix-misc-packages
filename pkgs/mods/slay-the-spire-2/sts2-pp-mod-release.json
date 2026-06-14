@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "mods": {
+    "DamageMeter": {
+      "latest": "1.14.5",
+      "name": "皮皮统计: Skada",
+      "changelog": "兼容 v0.107 RunManager 单人属性改名",
+      "changelog_detail": [
+        "修复 v0.107.0 将 RunManager.IsSinglePlayerOrFakeMultiplayer 改名为 IsSingleplayerOrFakeMultiplayer 后反复出现的 MissingMethodException。",
+        "玩家显示名解析改走共享 Sts2Compat 运行时桥，战斗统计采集继续兼容 v0.103.2 正式服与 v0.107.0 测试服。"
+      ],
+      "updated_at": "2026-06-05",
+      "download_cn": "https://gitee.com/forNoName/sts2-pp-mod-release/releases/download/DamageMeter-v1.14.5/DamageMeter_v1.14.5.zip",
+      "download_intl": "https://github.com/xhyrzldf/sts2-pp-mod-release/releases/download/DamageMeter-v1.14.5/DamageMeter_v1.14.5.zip",
+      "page": "",
+      "filename": "DamageMeter_v1.14.5.zip",
+      "channel": "stable",
+      "changelog_en": "Bridge v0.107 RunManager singleplayer rename",
+      "changelog_detail_en": [
+        "Fixes repeated MissingMethodException errors after v0.107.0 renamed RunManager.IsSinglePlayerOrFakeMultiplayer to IsSingleplayerOrFakeMultiplayer.",
+        "Player display-name resolution now goes through the shared Sts2Compat runtime bridge, keeping combat stats collection working on v0.103.2 stable and v0.107.0 beta."
+      ],
+      "sha256": "2513358c7bb97cb2165db2dfde971e9fd6f111c6be6ff47e331a3cd08b1244f2"
+    },
+    "SpeedX": {
+      "latest": "0.11.7",
+      "name": "皮皮极速: SpeedX",
+      "changelog": "修复 v0.105.0 奖励界面改动导致 SpeedX 失效",
+      "changelog_detail": [
+        "修复 v0.105.0 删除 NRewardsScreen.SetRewards、把奖励按钮生成移动到 _Ready 后，SpeedX 在 Harmony PatchAll 阶段失败的问题。",
+        "自动拾取会在 v0.103.2 上继续挂 SetRewards，在 v0.105.0 上自动改挂 _Ready，从而恢复整体倍速/跳动画等补丁初始化。",
+        "继续保持 v0.103.2/v0.105.0 单 DLL 兼容构建，并通过 IL 静态兼容检查。"
+      ],
+      "updated_at": "2026-05-08",
+      "download_cn": "https://gitee.com/forNoName/sts2-pp-mod-release/releases/download/SpeedX-v0.11.7/SpeedX_v0.11.7.zip",
+      "download_intl": "https://github.com/xhyrzldf/sts2-pp-mod-release/releases/download/SpeedX-v0.11.7/SpeedX_v0.11.7.zip",
+      "page": "",
+      "filename": "SpeedX_v0.11.7.zip",
+      "channel": "stable",
+      "sha256": "1166fada03cdf49a13d98eb52529bcee2b3a8582884f1b2242fab39cb95775ce",
+      "changelog_en": "Restore SpeedX on STS2 v0.105.0 rewards screen changes",
+      "changelog_detail_en": [
+        "Fixes SpeedX failing during Harmony PatchAll on v0.105.0 because NRewardsScreen.SetRewards was removed and reward setup moved into _Ready.",
+        "Auto-loot now targets SetRewards on v0.103.2 or _Ready on v0.105.0, restoring global speed/skip patches after startup.",
+        "Keeps the v0.103.2/v0.105.0 single-DLL compatibility build and passes the static IL compatibility guard."
+      ]
+    },
+    "RemoveMultiplayerPlayerLimit": {
+      "latest": "0.0.5",
+      "name": "Remove Multiplayer Player Limit",
+      "changelog": "适配 v0.99 beta 新 mod 结构",
+      "changelog_detail": [
+        "新增 v0.99 格式 manifest（外部 JSON + id + affects_gameplay）",
+        "多人联机 API 无破坏性变更，Harmony patches 全部兼容"
+      ],
+      "updated_at": "2026-03-14",
+      "download_cn": "https://gitee.com/forNoName/sts2-pp-mod-release/releases/download/RemoveMultiplayerPlayerLimit-v0.0.5/RemoveMultiplayerPlayerLimit_v0.0.5.zip",
+      "download_intl": "https://github.com/xhyrzldf/sts2-pp-mod-release/releases/download/RemoveMultiplayerPlayerLimit-v0.0.5/RemoveMultiplayerPlayerLimit_v0.0.5.zip",
+      "page": "",
+      "channel": "stable",
+      "filename": "RemoveMultiplayerPlayerLimit_v0.0.5.zip",
+      "sha256": "74f1d5c4a662521ed2a47f8400e93179bc83252ce55a4af8d2a2cc353249c292"
+    },
+    "Rewind": {
+      "latest": "0.26.11",
+      "name": "皮皮倒带: Rewind",
+      "changelog": "恢复 v0.107 继续游戏读档追踪兼容性",
+      "changelog_detail": [
+        "扩展共享 Sts2Compat 的 RunManager setup 解析，覆盖 v0.107.0 的 SetUpSavedSingleplayer 改名，同时保留 v0.103.2 的 SetUpSavedSinglePlayer 路径。",
+        "倒带的继续游戏 / reload 统计 patch 继续运行时绑定，不再依赖单一分支的方法大小写。"
+      ],
+      "updated_at": "2026-06-05",
+      "download_cn": "https://gitee.com/forNoName/sts2-pp-mod-release/releases/download/Rewind-v0.26.11/Rewind_v0.26.11.zip",
+      "download_intl": "https://github.com/xhyrzldf/sts2-pp-mod-release/releases/download/Rewind-v0.26.11/Rewind_v0.26.11.zip",
+      "page": "",
+      "filename": "Rewind_v0.26.11.zip",
+      "channel": "stable",
+      "changelog_en": "Restore v0.107 save-continue tracking compatibility",
+      "changelog_detail_en": [
+        "Extends the shared Sts2Compat RunManager setup resolver to cover the v0.107.0 SetUpSavedSingleplayer rename while preserving the v0.103.2 SetUpSavedSinglePlayer path.",
+        "Keeps Rewind's continue/reload statistics patch bound at runtime instead of depending on one branch's method casing."
+      ],
+      "sha256": "7558eed947be6cf5cd1fc252f1c960fe2fbd32ddf0335f1158a2a8af4a4fba49"
+    },
+    "ModConfig": {
+      "latest": "0.2.3",
+      "name": "皮皮配置: ModConfig",
+      "changelog": "重新打包发布 zip，移除 legacy mod_manifest.json 修复游戏菜单里的重复模组条目",
+      "changelog_detail": [
+        "游戏 v0.99+ 起 <ModId>.json 是唯一的外部 root manifest，但 mod loader 依然会扫描 legacy mod_manifest.json —— 同目录两份 manifest 会被 loader 各自注册为独立模组条目，游戏菜单里就出现同名的红色「已加载」坏条目。",
+        "上一版发布 zip 里同时带了两份 manifest。虽然 ModManager.ps1 安装/更新时会调用 Remove-LegacyExternalManifest 清理玩家目录，但 zip 里还带着 mod_manifest.json，紧跟的 Copy-Item 又把它复制回来，等于白清理。",
+        "本版重新打包的 zip 只含 <Mod>.json + DLL + PCK，不含 mod_manifest.json。没有代码变更。从上一版更新过来时，ModManager 会删掉玩家目录里残留的 mod_manifest.json，重复条目消失。"
+      ],
+      "updated_at": "2026-04-19",
+      "download_cn": "https://gitee.com/forNoName/sts2-pp-mod-release/releases/download/ModConfig-v0.2.3/ModConfig_v0.2.3.zip",
+      "download_intl": "https://github.com/xhyrzldf/sts2-pp-mod-release/releases/download/ModConfig-v0.2.3/ModConfig_v0.2.3.zip",
+      "page": "",
+      "filename": "ModConfig_v0.2.3.zip",
+      "channel": "stable",
+      "sha256": "dab047d5cea9163e4fdce73b05aed8fd4790c5210d327bcd6f620415db7b9d06",
+      "changelog_en": "repackage release zip without legacy mod_manifest.json to fix duplicate mod entry in game menu",
+      "changelog_detail_en": [
+        "Game v0.99+ introduced <ModId>.json as the sole external root manifest. The mod loader still scans for legacy mod_manifest.json - so when a deployed folder contains both, the loader registers them as two separate mod entries and the game menu shows a duplicate red 'already loaded' row for that mod.",
+        "Releases up to and including the previous version shipped both manifests in the zip. Even though ModManager.ps1's install/update path calls Remove-LegacyExternalManifest to clean the target directory, the cleanup was undone because the zip still contained mod_manifest.json and the subsequent Copy-Item step re-deposited it.",
+        "This release ships a repackaged zip that contains only <Mod>.json + DLL + PCK. No code changes. Updating from the previous version will trigger ModManager to remove the old mod_manifest.json from the player's game folder and the duplicate entry disappears."
+      ]
+    },
+    "QuickLink": {
+      "latest": "0.9.9",
+      "name": "皮皮快连: QuickLink",
+      "changelog": "恢复 v0.107 多人读档 setup patch 绑定",
+      "changelog_detail": [
+        "多人存档载入 timing Harmony patch 改为运行时解析 RunManager.SetUpSavedMultiPlayer / SetUpSavedMultiplayer。",
+        "保留 v0.103.2 的 Postfix 路径，并让 v0.107.0 下的战斗同步绕过日志与安全兜底继续生效。"
+      ],
+      "updated_at": "2026-06-05",
+      "download_cn": "https://gitee.com/forNoName/sts2-pp-mod-release/releases/download/QuickLink-v0.9.9/QuickLink_v0.9.9.zip",
+      "download_intl": "https://github.com/xhyrzldf/sts2-pp-mod-release/releases/download/QuickLink-v0.9.9/QuickLink_v0.9.9.zip",
+      "page": "",
+      "filename": "QuickLink_v0.9.9.zip",
+      "channel": "stable",
+      "sha256": "6a0c4351eda456f98cba54b69924e613d9c2d3a77ef84d61f0ed20a5a635388a",
+      "changelog_en": "Restore v0.107 multiplayer setup patch binding",
+      "changelog_detail_en": [
+        "Changes the saved-multiplayer timing Harmony patch to resolve RunManager.SetUpSavedMultiPlayer/SetUpSavedMultiplayer at runtime.",
+        "Preserves the v0.103.2 postfix path and keeps QuickLink's v0.107.0 combat-sync bypass logging and safety pass active."
+      ]
+    }
+  },
+  "updated_at": "2026-05-17"
+}
