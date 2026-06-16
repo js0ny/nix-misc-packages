@@ -3,6 +3,7 @@
   lib,
   fetchurl,
   unzip,
+  sources,
   ...
 }:
 let
@@ -84,4 +85,5 @@ in
       license = lib.licenses.unfree;
     };
   };
+  quick-restart = import ./quick-restart.nix { inherit lib stdenvNoCC sources; };
 }

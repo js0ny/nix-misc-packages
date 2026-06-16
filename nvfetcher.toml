@@ -28,6 +28,10 @@ fetch.url = "https://github.com/nilaoda/BBDown/releases/download/$ver/BBDown_$ve
 src.git = "https://github.com/MrOtherGuy/firefox-csshacks.git"
 fetch.git = "https://github.com/MrOtherGuy/firefox-csshacks.git"
 
+[mpv-bilibili-sponsorblock]
+src.github_tag = "test482/mpv-bilibili-sponsorblock"
+fetch.github = "test482/mpv-bilibili-sponsorblock"
+
 [go-fast-note-sync]
 src.github = "erichll/go-fast-note-sync"
 fetch.github = "erichll/go-fast-note-sync"
@@ -59,3 +63,7 @@ fetch.url = "https://github.com/amzxyz/rime_wanxiang/releases/download/$ver/rime
 [dwproton]
 src.cmd = "curl -sSL https://dawn.wine/api/v1/repos/dawn-winery/dwproton/releases/latest | jq -r .tag_name"
 fetch.tarball = "https://dawn.wine/dawn-winery/dwproton/releases/download/$ver/$ver-x86_64.tar.xz"
+
+[sts2-Quick-Restart]
+src.github = "erasels/StS2-Quick-Restart"
+fetch.tarball = "https://github.com/erasels/StS2-Quick-Restart/releases/download/$ver/QuickRestart.zip"

@@ -90,6 +90,17 @@
       sha256 = "sha256-PgDjXTrMCpTKth/nVczBHUCAuaGn8ZWbTXY5yVH5A6M=";
     };
   };
+  mpv-bilibili-sponsorblock = {
+    pname = "mpv-bilibili-sponsorblock";
+    version = "v0.1.1";
+    src = fetchFromGitHub {
+      owner = "test482";
+      repo = "mpv-bilibili-sponsorblock";
+      rev = "v0.1.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-W3H/mHmXIdmfH8k2wFXfalF4W7WDQIDAW0wo11n3V04=";
+    };
+  };
   noname = {
     pname = "noname";
     version = "v1.11.4.1";
@@ -142,18 +153,26 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v15.14.2";
+    version = "v15.14.3";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v15.14.2/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-f25HpNM6LsBVtN7XSTVIpmBthkvZL961o0SZYuOdsZ0=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v15.14.3/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-OHgnAVCi+Byfhy0CeRue126c5qhrgIA72356lVQFUts=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v15.14.2";
+    version = "v15.14.3";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v15.14.2/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-+dbEvWnkMFI04kARWBG7BTIQ+w9vwu6zQMn6W40vAT8=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v15.14.3/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-Y27ReMFDt5p/KlnVJsFAvv2vBZQCBeR4rL3Slt1d0mI=";
+    };
+  };
+  sts2-Quick-Restart = {
+    pname = "sts2-Quick-Restart";
+    version = "v1.2.1";
+    src = fetchTarball {
+      url = "https://github.com/erasels/StS2-Quick-Restart/releases/download/v1.2.1/QuickRestart.zip";
+      sha256 = "sha256-lELAlIGxm06jRmNYjfH4Fz5TBbShMd+bwYiUc15xr+Q=";
     };
   };
 }
