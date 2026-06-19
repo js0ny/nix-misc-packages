@@ -67,3 +67,7 @@ fetch.tarball = "https://dawn.wine/dawn-winery/dwproton/releases/download/$ver/$
 [sts2-Quick-Restart]
 src.github = "erasels/StS2-Quick-Restart"
 fetch.tarball = "https://github.com/erasels/StS2-Quick-Restart/releases/download/$ver/QuickRestart.zip"
+
+[SlayTheSpire2-LAN-Multiplayer]
+src.github = "kmyuhkyuk/SlayTheSpire2.LAN.Multiplayer"
+fetch.url = "https://github.com/kmyuhkyuk/SlayTheSpire2.LAN.Multiplayer/releases/download/$ver/SlayTheSpire2.LAN.Multiplayer.Release_$ver.7z"

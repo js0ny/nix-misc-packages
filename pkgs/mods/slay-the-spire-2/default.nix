@@ -4,6 +4,7 @@
   fetchurl,
   unzip,
   sources,
+  pkgs,
   ...
 }:
 let
@@ -87,4 +88,12 @@ in
     };
   };
   quick-restart = import ./quick-restart.nix { inherit lib stdenvNoCC sources; };
+  lan-multiplayer = import ./lan-multiplayer.nix {
+    inherit
+      lib
+      stdenvNoCC
+      sources
+      pkgs
+      ;
+  };
 }

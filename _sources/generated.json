@@ -1,4 +1,19 @@
 {
+    "SlayTheSpire2-LAN-Multiplayer": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "SlayTheSpire2-LAN-Multiplayer",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-rpoRw6jOU9tuj63gjrHtXgW4TzVH0cH/N10pEBjrb7o=",
+            "type": "url",
+            "url": "https://github.com/kmyuhkyuk/SlayTheSpire2.LAN.Multiplayer/releases/download/1.6.3/SlayTheSpire2.LAN.Multiplayer.Release_1.6.3.7z"
+        },
+        "version": "1.6.3"
+    },
     "bbdown-linux-arm64": {
         "cargoLock": null,
         "date": null,

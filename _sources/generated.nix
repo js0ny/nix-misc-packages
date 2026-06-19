@@ -6,6 +6,14 @@
   dockerTools,
 }:
 {
+  SlayTheSpire2-LAN-Multiplayer = {
+    pname = "SlayTheSpire2-LAN-Multiplayer";
+    version = "1.6.3";
+    src = fetchurl {
+      url = "https://github.com/kmyuhkyuk/SlayTheSpire2.LAN.Multiplayer/releases/download/1.6.3/SlayTheSpire2.LAN.Multiplayer.Release_1.6.3.7z";
+      sha256 = "sha256-rpoRw6jOU9tuj63gjrHtXgW4TzVH0cH/N10pEBjrb7o=";
+    };
+  };
   bbdown-linux-arm64 = {
     pname = "bbdown-linux-arm64";
     version = "1.6.3";
