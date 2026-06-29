@@ -14,6 +14,11 @@ stdenvNoCC.mkDerivation {
     date
     ;
 
+  outputs = [
+    "out"
+    "raw"
+  ];
+
   postPatch = ''
     find . -name '*.md' -delete
     rm -rf .scripts
@@ -23,8 +28,9 @@ stdenvNoCC.mkDerivation {
   installPhase = ''
     runHook preInstall
 
-    mkdir -p $out
-    cp -r . $out
+    mkdir -p $raw $out/share/rime-data
+    cp -r . $raw
+    cp -r . $out/share/rime-data
 
     runHook postInstall
   '';

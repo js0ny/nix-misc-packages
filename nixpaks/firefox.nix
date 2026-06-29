@@ -37,6 +37,7 @@ let
             sloth.xdgDownloadDir
           ];
           bind.ro = [
+            "/etc/firefox"
             "/sys/bus/pci"
             [
               "${config.app.package}/lib/firefox"

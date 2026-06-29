@@ -22,6 +22,11 @@ let
         src
         ;
 
+      outputs = [
+        "out"
+        "raw"
+      ];
+
       postPatch = lib.optionalString (!keepDefault) /* bash */ ''
         rm -f README.md
         mv default.yaml .wanxiang-default.yaml
@@ -30,15 +35,16 @@ let
 
       nativeBuildInputs = [ unzip ];
 
-      sourceRoot = ".";
+      sourceRoot = "source";
 
       unpackPhase = ''
-        unzip $src -d .
+        unzip $src -d source
       '';
 
       installPhase = ''
-        mkdir -p $out
-        cp -r * $out/
+        mkdir -p $raw $out/share/rime-data
+        cp -r * $raw/
+        cp -r * $out/share/rime-data/
       '';
 
       meta = {

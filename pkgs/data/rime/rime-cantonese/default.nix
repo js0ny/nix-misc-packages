@@ -10,14 +10,20 @@ in
 stdenvNoCC.mkDerivation {
   inherit (p) pname version src;
 
+  outputs = [
+    "out"
+    "raw"
+  ];
+
   postPatch = ''
     find . -name '*.md' -delete
     rm -rf .ci .github demo
   '';
 
   installPhase = ''
-    mkdir -p $out
-    cp -r . $out
+    mkdir -p $raw $out/share/rime-data
+    cp -r . $raw
+    cp -r . $out/share/rime-data
   '';
 
   meta = {
