@@ -98,6 +98,20 @@
       sha256 = "sha256-PgDjXTrMCpTKth/nVczBHUCAuaGn8ZWbTXY5yVH5A6M=";
     };
   };
+  limes = {
+    pname = "limes";
+    version = "0cd6451c4558919ffeceec51f11b7fa8b912318e";
+    src = fetchgit {
+      url = "https://github.com/js0ny/limes.git";
+      rev = "0cd6451c4558919ffeceec51f11b7fa8b912318e";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-Nt/y2H5+T9mA0Lvv23dig4BZUUGib16tPiCb0+Fg14Q=";
+    };
+    date = "2026-07-07";
+  };
   mpv-bilibili-sponsorblock = {
     pname = "mpv-bilibili-sponsorblock";
     version = "v0.1.1";
@@ -119,6 +133,20 @@
       fetchSubmodules = false;
       sha256 = "sha256-Ez/XZHtEDvLCVnJvqxQcUeiZI6GiJMjrorV48eSmbqM=";
     };
+  };
+  oroot = {
+    pname = "oroot";
+    version = "3cb72e3e6842bd3b293c4ed676c5feb571b79bf9";
+    src = fetchgit {
+      url = "https://github.com/js0ny/oroot.git";
+      rev = "3cb72e3e6842bd3b293c4ed676c5feb571b79bf9";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-oQkJaekrzGXXfkYcDST25HcILkI6m7Lhw7ylXp9Js9Q=";
+    };
+    date = "2026-07-05";
   };
   rime-cantonese = {
     pname = "rime-cantonese";

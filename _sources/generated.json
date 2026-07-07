@@ -163,6 +163,26 @@
         },
         "version": "v4.0.0.6"
     },
+    "limes": {
+        "cargoLock": null,
+        "date": "2026-07-07",
+        "extract": null,
+        "name": "limes",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "0cd6451c4558919ffeceec51f11b7fa8b912318e",
+            "sha256": "sha256-Nt/y2H5+T9mA0Lvv23dig4BZUUGib16tPiCb0+Fg14Q=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/js0ny/limes.git"
+        },
+        "version": "0cd6451c4558919ffeceec51f11b7fa8b912318e"
+    },
     "mpv-bilibili-sponsorblock": {
         "cargoLock": null,
         "date": null,
@@ -204,6 +224,26 @@
             "type": "github"
         },
         "version": "v1.11.4.1"
+    },
+    "oroot": {
+        "cargoLock": null,
+        "date": "2026-07-05",
+        "extract": null,
+        "name": "oroot",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "3cb72e3e6842bd3b293c4ed676c5feb571b79bf9",
+            "sha256": "sha256-oQkJaekrzGXXfkYcDST25HcILkI6m7Lhw7ylXp9Js9Q=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/js0ny/oroot.git"
+        },
+        "version": "3cb72e3e6842bd3b293c4ed676c5feb571b79bf9"
     },
     "rime-cantonese": {
         "cargoLock": null,

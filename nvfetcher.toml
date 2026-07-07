@@ -36,6 +36,14 @@ fetch.github = "test482/mpv-bilibili-sponsorblock"
 src.github = "erichll/go-fast-note-sync"
 fetch.github = "erichll/go-fast-note-sync"
 
+[oroot]
+src.git = "https://github.com/js0ny/oroot.git"
+fetch.git = "https://github.com/js0ny/oroot.git"
+
+[limes]
+src.git = "https://github.com/js0ny/limes.git"
+fetch.git = "https://github.com/js0ny/limes.git"
+
 [noname]
 src.github = "libnoname/noname"
 fetch.github = "libnoname/noname"
