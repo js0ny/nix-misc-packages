@@ -46,6 +46,20 @@
       sha256 = "sha256-lJV+ujiSx/IkjLG5UcA54+3ucNscV2KBwOYnIlUMM2s=";
     };
   };
+  dump-tabs = {
+    pname = "dump-tabs";
+    version = "450b3f61a3cabd2e9ef76bfa5639a19fdced3aa6";
+    src = fetchgit {
+      url = "https://github.com/js0ny/dump-tabs.yazi.git";
+      rev = "450b3f61a3cabd2e9ef76bfa5639a19fdced3aa6";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-Q5cRAyovD+KcbfFTr3pkX+IPeJpvlXh1l6bVSuHXTCE=";
+    };
+    date = "2026-07-09";
+  };
   dwproton = {
     pname = "dwproton";
     version = "dwproton-11.0-5";
@@ -136,17 +150,17 @@
   };
   oroot = {
     pname = "oroot";
-    version = "3cb72e3e6842bd3b293c4ed676c5feb571b79bf9";
+    version = "0b76c1e834cea24cad8e8ad7204db01f970303ce";
     src = fetchgit {
       url = "https://github.com/js0ny/oroot.git";
-      rev = "3cb72e3e6842bd3b293c4ed676c5feb571b79bf9";
+      rev = "0b76c1e834cea24cad8e8ad7204db01f970303ce";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-oQkJaekrzGXXfkYcDST25HcILkI6m7Lhw7ylXp9Js9Q=";
+      sha256 = "sha256-irYbVLJAvf1QooFBJCj1QquO9fNyU3rMoR5eZ/KItz0=";
     };
-    date = "2026-07-05";
+    date = "2026-07-09";
   };
   rime-cantonese = {
     pname = "rime-cantonese";

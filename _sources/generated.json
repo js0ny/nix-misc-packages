@@ -73,6 +73,26 @@
         },
         "version": "0.0.15"
     },
+    "dump-tabs": {
+        "cargoLock": null,
+        "date": "2026-07-09",
+        "extract": null,
+        "name": "dump-tabs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "450b3f61a3cabd2e9ef76bfa5639a19fdced3aa6",
+            "sha256": "sha256-Q5cRAyovD+KcbfFTr3pkX+IPeJpvlXh1l6bVSuHXTCE=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/js0ny/dump-tabs.yazi.git"
+        },
+        "version": "450b3f61a3cabd2e9ef76bfa5639a19fdced3aa6"
+    },
     "dwproton": {
         "cargoLock": null,
         "date": null,
@@ -227,7 +247,7 @@
     },
     "oroot": {
         "cargoLock": null,
-        "date": "2026-07-05",
+        "date": "2026-07-09",
         "extract": null,
         "name": "oroot",
         "passthru": null,
@@ -237,13 +257,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "3cb72e3e6842bd3b293c4ed676c5feb571b79bf9",
-            "sha256": "sha256-oQkJaekrzGXXfkYcDST25HcILkI6m7Lhw7ylXp9Js9Q=",
+            "rev": "0b76c1e834cea24cad8e8ad7204db01f970303ce",
+            "sha256": "sha256-irYbVLJAvf1QooFBJCj1QquO9fNyU3rMoR5eZ/KItz0=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/js0ny/oroot.git"
         },
-        "version": "3cb72e3e6842bd3b293c4ed676c5feb571b79bf9"
+        "version": "0b76c1e834cea24cad8e8ad7204db01f970303ce"
     },
     "rime-cantonese": {
         "cargoLock": null,
