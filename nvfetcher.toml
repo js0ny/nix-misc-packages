@@ -48,6 +48,10 @@ fetch.git = "https://github.com/js0ny/limes.git"
 src.github = "libnoname/noname"
 fetch.github = "libnoname/noname"
 
+[ratune]
+src.github = "acmagn/ratune"
+fetch.github = "acmagn/ratune"
+
 [rime-cantonese]
 src.github = "rime/rime-cantonese"
 fetch.github = "rime/rime-cantonese"

@@ -50,6 +50,7 @@
               bbdown = packageTree.apps.bbdown;
               limes = packageTree.apps.limes;
               oroot = packageTree.apps.oroot;
+              ratune = packageTree.apps.ratune;
               danmaku2ass = packageTree.apps.danmaku2ass;
               clrmamepro = packageTree.apps.wine.clrmamepro;
               ecdict = packageTree.data.stardict.ecdict;

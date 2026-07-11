@@ -162,6 +162,17 @@
     };
     date = "2026-07-09";
   };
+  ratune = {
+    pname = "ratune";
+    version = "v0.15.1";
+    src = fetchFromGitHub {
+      owner = "acmagn";
+      repo = "ratune";
+      rev = "v0.15.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-bavGTCOoVcI4LTnnPOalu19YN+5qIYVcKkVjPAIsuzM=";
+    };
+  };
   rime-cantonese = {
     pname = "rime-cantonese";
     version = "latest";

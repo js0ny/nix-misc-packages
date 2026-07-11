@@ -265,6 +265,27 @@
         },
         "version": "0b76c1e834cea24cad8e8ad7204db01f970303ce"
     },
+    "ratune": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "ratune",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "acmagn",
+            "repo": "ratune",
+            "rev": "v0.15.1",
+            "sha256": "sha256-bavGTCOoVcI4LTnnPOalu19YN+5qIYVcKkVjPAIsuzM=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.15.1"
+    },
     "rime-cantonese": {
         "cargoLock": null,
         "date": null,
