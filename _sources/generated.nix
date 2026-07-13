@@ -62,10 +62,10 @@
   };
   dwproton = {
     pname = "dwproton";
-    version = "dwproton-11.0-5";
+    version = "dwproton-11.0-6";
     src = fetchTarball {
-      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-5/dwproton-11.0-5-x86_64.tar.xz";
-      sha256 = "sha256-2x4xotJ2aJYbg+G2TDPqyU7uuoc/hZQon9CA6SFGin0=";
+      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-6/dwproton-11.0-6-x86_64.tar.xz";
+      sha256 = "sha256-7nj4uEr8FnCWThD4A2iBynfxTFfNeScxMHshEzgN9F4=";
     };
   };
   firefox-csshacks = {
@@ -214,18 +214,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v16.0.1";
+    version = "v16.1.0";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.0.1/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-joXwFiVWSKUS0dTEL1uWQq8N8F4s77YEd7JaV5AQxSc=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.0/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-8Cagd5K/SgxvVxbFjJBuEr3SYaGMTDbFdtNk2shGzs4=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v16.0.1";
+    version = "v16.1.0";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.0.1/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-FatHxejbLnIxy9JFLs2Ej2nmvAVJPpR4zcf0/d5m9SA=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.0/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-OVQygGw/KO09xYtPAJk8Y+j/uAqxKeKmuN2lLRcqC44=";
     };
   };
   sts2-Quick-Restart = {
