@@ -62,10 +62,10 @@
   };
   dwproton = {
     pname = "dwproton";
-    version = "dwproton-11.0-6";
+    version = "dwproton-11.0-7";
     src = fetchTarball {
-      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-6/dwproton-11.0-6-x86_64.tar.xz";
-      sha256 = "sha256-7nj4uEr8FnCWThD4A2iBynfxTFfNeScxMHshEzgN9F4=";
+      url = "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-7/dwproton-11.0-7-x86_64.tar.xz";
+      sha256 = "sha256-M8wcC7pKFs0Qena5NN9ylq2TykRfPK7JiHnzP6DkZv0=";
     };
   };
   firefox-csshacks = {
@@ -214,18 +214,18 @@
   };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
-    version = "v16.1.0";
+    version = "v16.1.3";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.0/rime-wanxiang-flypy-fuzhu.zip";
-      sha256 = "sha256-8Cagd5K/SgxvVxbFjJBuEr3SYaGMTDbFdtNk2shGzs4=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.3/rime-wanxiang-flypy-fuzhu.zip";
+      sha256 = "sha256-rvdRU/K/3VkuR//qp4KYeJ8HX8IKZYPltUhJApO2fwY=";
     };
   };
   rime-wanxiang-zrm = {
     pname = "rime-wanxiang-zrm";
-    version = "v16.1.0";
+    version = "v16.1.3";
     src = fetchurl {
-      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.0/rime-wanxiang-zrm-fuzhu.zip";
-      sha256 = "sha256-OVQygGw/KO09xYtPAJk8Y+j/uAqxKeKmuN2lLRcqC44=";
+      url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.3/rime-wanxiang-zrm-fuzhu.zip";
+      sha256 = "sha256-kKPnTaCd5sr+opB4HGiTGhO790DZYGex7L6mx/gENAo=";
     };
   };
   sts2-Quick-Restart = {
@@ -234,6 +234,17 @@
     src = fetchTarball {
       url = "https://github.com/erasels/StS2-Quick-Restart/releases/download/v1.2.1/QuickRestart.zip";
       sha256 = "sha256-lELAlIGxm06jRmNYjfH4Fz5TBbShMd+bwYiUc15xr+Q=";
+    };
+  };
+  wdotool = {
+    pname = "wdotool";
+    version = "v0.5.3";
+    src = fetchFromGitHub {
+      owner = "cushycush";
+      repo = "wdotool";
+      rev = "v0.5.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-kmEMkkU5cy2AqEzbpm4Dp+FzguzldzWqD5KSr7uskLE=";
     };
   };
 }

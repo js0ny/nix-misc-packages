@@ -87,3 +87,7 @@ fetch.url = "https://github.com/kmyuhkyuk/SlayTheSpire2.LAN.Multiplayer/releases
 [dump-tabs]
 src.git = "https://github.com/js0ny/dump-tabs.yazi.git"
 fetch.git = "https://github.com/js0ny/dump-tabs.yazi.git"
+
+[wdotool]
+src.github = "cushycush/wdotool"
+fetch.github =  "cushycush/wdotool"

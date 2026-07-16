@@ -101,11 +101,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-7nj4uEr8FnCWThD4A2iBynfxTFfNeScxMHshEzgN9F4=",
+            "sha256": "sha256-M8wcC7pKFs0Qena5NN9ylq2TykRfPK7JiHnzP6DkZv0=",
             "type": "tarball",
-            "url": "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-6/dwproton-11.0-6-x86_64.tar.xz"
+            "url": "https://dawn.wine/dawn-winery/dwproton/releases/download/dwproton-11.0-7/dwproton-11.0-7-x86_64.tar.xz"
         },
-        "version": "dwproton-11.0-6"
+        "version": "dwproton-11.0-7"
     },
     "firefox-csshacks": {
         "cargoLock": null,
@@ -356,11 +356,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8Cagd5K/SgxvVxbFjJBuEr3SYaGMTDbFdtNk2shGzs4=",
+            "sha256": "sha256-rvdRU/K/3VkuR//qp4KYeJ8HX8IKZYPltUhJApO2fwY=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.0/rime-wanxiang-flypy-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.3/rime-wanxiang-flypy-fuzhu.zip"
         },
-        "version": "v16.1.0"
+        "version": "v16.1.3"
     },
     "rime-wanxiang-zrm": {
         "cargoLock": null,
@@ -371,11 +371,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-OVQygGw/KO09xYtPAJk8Y+j/uAqxKeKmuN2lLRcqC44=",
+            "sha256": "sha256-kKPnTaCd5sr+opB4HGiTGhO790DZYGex7L6mx/gENAo=",
             "type": "url",
-            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.0/rime-wanxiang-zrm-fuzhu.zip"
+            "url": "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.3/rime-wanxiang-zrm-fuzhu.zip"
         },
-        "version": "v16.1.0"
+        "version": "v16.1.3"
     },
     "sts2-Quick-Restart": {
         "cargoLock": null,
@@ -390,5 +390,26 @@
             "url": "https://github.com/erasels/StS2-Quick-Restart/releases/download/v1.2.1/QuickRestart.zip"
         },
         "version": "v1.2.1"
+    },
+    "wdotool": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "wdotool",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "cushycush",
+            "repo": "wdotool",
+            "rev": "v0.5.3",
+            "sha256": "sha256-kmEMkkU5cy2AqEzbpm4Dp+FzguzldzWqD5KSr7uskLE=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "v0.5.3"
     }
 }
