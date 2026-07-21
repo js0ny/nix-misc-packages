@@ -235,6 +235,22 @@
     };
     date = "2025-04-03";
   };
+  rime-lmdg-zh-hans = {
+    pname = "rime-lmdg-zh-hans";
+    version = "LTS";
+    src = fetchurl {
+      url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram";
+      sha256 = "sha256-e3Hh2H2tCXG42NPZE0k7/ZOXDli2C7hCqq4ibNYNbv4=";
+    };
+  };
+  rime-lmdg-zh-hant = {
+    pname = "rime-lmdg-zh-hant";
+    version = "LTS";
+    src = fetchurl {
+      url = "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram";
+      sha256 = "sha256-oUYJIZb300lm+XT0k2TYOClEq9UELd1oLOJkgo/f7aU=";
+    };
+  };
   rime-wanxiang-flypy = {
     pname = "rime-wanxiang-flypy";
     version = "v16.1.3";

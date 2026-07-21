@@ -389,6 +389,36 @@
         },
         "version": "858f2abc645f0e459e468e98122470ce20b16b30"
     },
+    "rime-lmdg-zh-hans": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "rime-lmdg-zh-hans",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-e3Hh2H2tCXG42NPZE0k7/ZOXDli2C7hCqq4ibNYNbv4=",
+            "type": "url",
+            "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram"
+        },
+        "version": "LTS"
+    },
+    "rime-lmdg-zh-hant": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "rime-lmdg-zh-hant",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-oUYJIZb300lm+XT0k2TYOClEq9UELd1oLOJkgo/f7aU=",
+            "type": "url",
+            "url": "https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hant.gram"
+        },
+        "version": "LTS"
+    },
     "rime-wanxiang-flypy": {
         "cargoLock": null,
         "date": null,

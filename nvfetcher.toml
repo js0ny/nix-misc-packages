@@ -104,3 +104,13 @@ git.fetchSubmodules = true
 [komari-agent]
 src.github = "komari-monitor/komari-agent"
 fetch.github = "komari-monitor/komari-agent"
+
+[rime-lmdg-zh-hans]
+src.manual = "LTS"
+fetch.url = "https://github.com/amzxyz/RIME-LMDG/releases/download/$ver/wanxiang-lts-zh-hans.gram"
+fetch.force = true
+
+[rime-lmdg-zh-hant]
+src.manual = "LTS"
+fetch.url = "https://github.com/amzxyz/RIME-LMDG/releases/download/$ver/wanxiang-lts-zh-hant.gram"
+fetch.force = true
