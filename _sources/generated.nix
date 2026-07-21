@@ -6,14 +6,6 @@
   dockerTools,
 }:
 {
-  SlayTheSpire2-LAN-Multiplayer = {
-    pname = "SlayTheSpire2-LAN-Multiplayer";
-    version = "1.6.3";
-    src = fetchurl {
-      url = "https://github.com/kmyuhkyuk/SlayTheSpire2.LAN.Multiplayer/releases/download/1.6.3/SlayTheSpire2.LAN.Multiplayer.Release_1.6.3.7z";
-      sha256 = "sha256-rpoRw6jOU9tuj63gjrHtXgW4TzVH0cH/N10pEBjrb7o=";
-    };
-  };
   bbdown-linux-arm64 = {
     pname = "bbdown-linux-arm64";
     version = "1.6.3";
@@ -265,14 +257,6 @@
     src = fetchurl {
       url = "https://github.com/amzxyz/rime_wanxiang/releases/download/v16.1.3/rime-wanxiang-zrm-fuzhu.zip";
       sha256 = "sha256-kKPnTaCd5sr+opB4HGiTGhO790DZYGex7L6mx/gENAo=";
-    };
-  };
-  sts2-Quick-Restart = {
-    pname = "sts2-Quick-Restart";
-    version = "v1.2.1";
-    src = fetchTarball {
-      url = "https://github.com/erasels/StS2-Quick-Restart/releases/download/v1.2.1/QuickRestart.zip";
-      sha256 = "sha256-lELAlIGxm06jRmNYjfH4Fz5TBbShMd+bwYiUc15xr+Q=";
     };
   };
   udpxy = {

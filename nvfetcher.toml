@@ -76,14 +76,6 @@ fetch.url = "https://github.com/amzxyz/rime_wanxiang/releases/download/$ver/rime
 src.cmd = "curl -sSL https://dawn.wine/api/v1/repos/dawn-winery/dwproton/releases/latest | jq -r .tag_name"
 fetch.tarball = "https://dawn.wine/dawn-winery/dwproton/releases/download/$ver/$ver-x86_64.tar.xz"
 
-[sts2-Quick-Restart]
-src.github = "erasels/StS2-Quick-Restart"
-fetch.tarball = "https://github.com/erasels/StS2-Quick-Restart/releases/download/$ver/QuickRestart.zip"
-
-[SlayTheSpire2-LAN-Multiplayer]
-src.github = "kmyuhkyuk/SlayTheSpire2.LAN.Multiplayer"
-fetch.url = "https://github.com/kmyuhkyuk/SlayTheSpire2.LAN.Multiplayer/releases/download/$ver/SlayTheSpire2.LAN.Multiplayer.Release_$ver.7z"
-
 [dump-tabs]
 src.git = "https://github.com/js0ny/dump-tabs.yazi.git"
 fetch.git = "https://github.com/js0ny/dump-tabs.yazi.git"
