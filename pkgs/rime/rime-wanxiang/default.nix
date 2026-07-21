@@ -57,12 +57,12 @@ let
     };
 in
 {
-  flypy = makeWanxiang {
+  rime-wanxiang-flypy = makeWanxiang {
     inherit lib;
     inherit (flypy) pname version src;
   };
 
-  zrm = makeWanxiang {
+  rime-wanxiang-zrm = makeWanxiang {
     inherit lib;
     inherit (zrm) pname version src;
   };
