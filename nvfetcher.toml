@@ -118,3 +118,7 @@ fetch.url = "https://proton.me/download/drive/cli/$ver/linux-arm64/proton-drive"
 src.webpage = "https://proton.me/download/drive/cli/index.html"
 src.regex = "drive/cli/([0-9.]+)"
 fetch.url = "https://proton.me/download/drive/cli/$ver/darwin-arm64/proton-drive"
+
+[dirstat-rs]
+src.github = "scullionw/dirstat-rs"
+fetch.github = "scullionw/dirstat-rs"

@@ -37,6 +37,17 @@
     };
     date = "2026-07-09";
   };
+  dirstat-rs = {
+    pname = "dirstat-rs";
+    version = "v0.3.7";
+    src = fetchFromGitHub {
+      owner = "scullionw";
+      repo = "dirstat-rs";
+      rev = "v0.3.7";
+      fetchSubmodules = false;
+      sha256 = "sha256-gDIUYhc+GWbQsn5DihnBJdOJ45zdwm24J2ZD2jEwGyE=";
+    };
+  };
   dump-tabs = {
     pname = "dump-tabs";
     version = "745e347bcf9a2bec87370a33d4929d07af09f011";
