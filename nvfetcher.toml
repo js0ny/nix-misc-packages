@@ -12,17 +12,9 @@ src.webpage = "https://codeberg.org/Lyall/ClairObscurFix/releases"
 src.regex = "ClairObscurFix_([0-9.]+)\\.zip"
 fetch.tarball = "https://codeberg.org/Lyall/ClairObscurFix/releases/download/$ver/ClairObscurFix_$ver.zip"
 
-[bbdown-linux-x64]
+[bbdown]
 src.github = "nilaoda/BBDown"
-fetch.url = "https://github.com/nilaoda/BBDown/releases/download/$ver/BBDown_$ver_20240814_linux-x64.zip"
-
-[bbdown-linux-arm64]
-src.github = "nilaoda/BBDown"
-fetch.url = "https://github.com/nilaoda/BBDown/releases/download/$ver/BBDown_$ver_20240814_linux-arm64.zip"
-
-[bbdown-osx-arm64]
-src.github = "nilaoda/BBDown"
-fetch.url = "https://github.com/nilaoda/BBDown/releases/download/$ver/BBDown_$ver_20240814_osx-arm64.zip"
+fetch.github = "nilaoda/BBDown"
 
 [firefox-csshacks]
 src.git = "https://github.com/MrOtherGuy/firefox-csshacks.git"

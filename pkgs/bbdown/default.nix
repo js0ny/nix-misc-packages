@@ -1,72 +1,42 @@
+# BBDown/Directory.Build.props: NativeAOT
 {
-  openssl,
-  stdenv,
   lib,
-  unzip,
-  autoPatchelfHook,
-  zlib,
-  icu,
   sources,
+  buildDotnetModule,
+  clang,
+  dotnetCorePackages,
+  zlib,
 }:
-
 let
-  archMap = {
-    "x86_64-linux" = sources.bbdown-linux-x64;
-    "aarch64-linux" = sources.bbdown-linux-arm64;
-    "aarch64-darwin" = sources.bbdown-osx-arm64;
-  };
-
-  system = stdenv.hostPlatform.system;
-
-  p = archMap.${system} or (throw "BBDown: Unsupported system ${system}");
+  p = sources.bbdown;
 in
-stdenv.mkDerivation {
-  pname = "BBDown";
-  inherit (p) version src;
+buildDotnetModule {
+  inherit (p) pname version src;
+  nugetDeps = ./deps.json;
 
-  nativeBuildInputs = [
-    unzip
-  ]
-  ++ lib.optionals stdenv.isLinux [ autoPatchelfHook ];
-
-  buildInputs = lib.optionals stdenv.isLinux [
-    zlib
-    icu
-    stdenv.cc.cc.lib
-    openssl
-  ];
-
-  sourceRoot = ".";
-
-  installPhase = ''
-    mkdir -p $out/bin
-    install -Dm755 BBDown $out/libexec/BBDown
-  ''
-  + lib.optionalString stdenv.isLinux ''
-    cat > $out/bin/BBDown <<EOF
-    #!${stdenv.shell}
-    export LD_LIBRARY_PATH="${
-      lib.makeLibraryPath [
-        openssl
-        icu
-        zlib
-        stdenv.cc.cc.lib
-      ]
-    }''${LD_LIBRARY_PATH:+:''$LD_LIBRARY_PATH}"
-    exec "$out/libexec/BBDown" "\$@"
-    EOF
-    chmod +x $out/bin/BBDown
-  ''
-  + lib.optionalString stdenv.isDarwin ''
-    install -Dm755 BBDown $out/bin/BBDown
+  # Use objcopy provided by llvm
+  postPatch = ''
+    substituteInPlace BBDown/Directory.Build.props \
+      --replace-fail aarch64-linux-gnu-objcopy objcopy
   '';
 
-  meta = with lib; {
+  nativeBuildInputs = [ clang ];
+  buildInputs = [ zlib ];
+
+  projectFile = "BBDown/BBDown.csproj";
+
+  dotnet-sdk = dotnetCorePackages.sdk_9_0;
+  dotnet-runtime = dotnetCorePackages.runtime_9_0;
+  selfContainedBuild = true;
+
+  executables = [ "BBDown" ];
+
+  meta = {
     description = "Bilibili Downloader. 一个命令行式哔哩哔哩下载器.";
     homepage = "https://github.com/nilaoda/BBDown";
-    license = licenses.mit;
-    platforms = builtins.attrNames archMap;
+    license = lib.licenses.mit;
+    platforms = with lib.platforms; linux ++ darwin;
     mainProgram = "BBDown";
-    sourceProvenance = [ lib.sourceTypes.binaryBytecode ];
+    sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
 }

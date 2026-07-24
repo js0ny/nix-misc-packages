@@ -6,28 +6,15 @@
   dockerTools,
 }:
 {
-  bbdown-linux-arm64 = {
-    pname = "bbdown-linux-arm64";
+  bbdown = {
+    pname = "bbdown";
     version = "1.6.3";
-    src = fetchurl {
-      url = "https://github.com/nilaoda/BBDown/releases/download/1.6.3/BBDown_1.6.3_20240814_linux-arm64.zip";
-      sha256 = "sha256-9Y4KGN8aWJN1QooK8n6mH1zpb/r2fRFfM11fm+6aNNw=";
-    };
-  };
-  bbdown-linux-x64 = {
-    pname = "bbdown-linux-x64";
-    version = "1.6.3";
-    src = fetchurl {
-      url = "https://github.com/nilaoda/BBDown/releases/download/1.6.3/BBDown_1.6.3_20240814_linux-x64.zip";
-      sha256 = "sha256-7CM7fY1AscxER9rAW+ND9Tp1fcYFdDqICKuqjpfl0Q4=";
-    };
-  };
-  bbdown-osx-arm64 = {
-    pname = "bbdown-osx-arm64";
-    version = "1.6.3";
-    src = fetchurl {
-      url = "https://github.com/nilaoda/BBDown/releases/download/1.6.3/BBDown_1.6.3_20240814_osx-arm64.zip";
-      sha256 = "sha256-TfhAFNgYvW3/KzZbhHZFNA6JVcRFD+llaI9Br4mji6o=";
+    src = fetchFromGitHub {
+      owner = "nilaoda";
+      repo = "BBDown";
+      rev = "1.6.3";
+      fetchSubmodules = false;
+      sha256 = "sha256-IXSK4XrdDbSbjvx0XsjZqi53mo4tTeFL3p0gegaNCA0=";
     };
   };
   clair-obscur-fix = {

@@ -1,6 +1,5 @@
 {
   stdenv,
-  fetchurl,
   libsecret,
   glib,
   lib,
@@ -35,7 +34,7 @@ stdenv.mkDerivation {
     runHook postInstall
   '';
   meta = with lib; {
-    description = "Proton Drive CLI";
+    description = "Command-line interface for Proton Drive";
     homepage = "https://github.com/ProtonDriveApps/sdk/tree/main/cli";
     license = licenses.mit;
     mainProgram = "proton-drive-cli";
